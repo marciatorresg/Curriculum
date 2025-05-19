@@ -6,6 +6,19 @@
     <meta name="description" content="Currículum Vitae de Marcia Torres. Experiencia profesional, educación y habilidades.">
     <meta name="author" content="Marcia Torres">
     <title>Currículum Vitae de Marcia Torres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        img.perfil {
+            max-width: 150px;
+            border-radius: 100px;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,21 +29,26 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#mapa">Mapa</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
             <p>Profesional proactiva y responsable con experiencia en gestión administrativa y atención al cliente. Destacada por la organización, el trabajo en equipo y la capacidad de adaptación a nuevos retos.</p>
         </section>
+
         <section id="experiencia">
             <h2>Experiencia</h2>
             <ul>
                 <li>
                     <strong>Asistente Administrativa</strong> - Empresa XYZ<br>
-                    Enero 2022 - Actualidad<br>
+                    Enero 2022 - Actualidad
                     <ul>
                         <li>Gestión de agendas y coordinación de reuniones.</li>
                         <li>Atención telefónica y presencial a clientes.</li>
@@ -39,7 +57,7 @@
                 </li>
                 <li>
                     <strong>Recepcionista</strong> - Consultorio ABC<br>
-                    Marzo 2020 - Diciembre 2021<br>
+                    Marzo 2020 - Diciembre 2021
                     <ul>
                         <li>Recepción y registro de pacientes.</li>
                         <li>Organización de archivos y expedientes.</li>
@@ -48,19 +66,15 @@
                 </li>
             </ul>
         </section>
+
         <section id="educacion">
             <h2>Educación</h2>
             <ul>
-                <li>
-                    <strong>Técnico en Administración</strong><br>
-                    Instituto Profesional de Chile, 2019
-                </li>
-                <li>
-                    <strong>Enseñanza Media Completa</strong><br>
-                    Liceo Nacional, 2016
-                </li>
+                <li><strong>Técnico en Administración</strong><br> Instituto Profesional de Chile, 2019</li>
+                <li><strong>Enseñanza Media Completa</strong><br> Liceo Nacional, 2016</li>
             </ul>
         </section>
+
         <section id="habilidades">
             <h2>Habilidades</h2>
             <ul>
@@ -72,17 +86,152 @@
                 <li>Resolución de problemas</li>
             </ul>
         </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
+
+            <!-- Imagen profesional alojada en Placehold.co con la imagen proporcionada -->
+            <img src="./img/contacto.jpeg" alt="Foto de Marcia Torres" style="border-radius: 100px;" width="310" height="315">
+
+            <!-- Información de contacto -->
             <ul>
                 <li><strong>Email:</strong> marcia.torres@email.com</li>
                 <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
-                <li><strong>Dirección:</strong> Santiago, Chile</li>
+                <li><strong>Dirección:</strong> Guayaquil, Ecuador</li>
             </ul>
+
+            <!-- Formulario de contacto -->
+                <form action="mailto:marcia.torres@email.com" method="post" enctype="text/plain">
+        
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="trabajo">Oferta laboral</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>¿Cómo desea que le contacte?</legend>
+                        <label>
+                            <input type="radio" name="contacto" value="email" required> Correo electrónico
+                        </label>
+                        <label>
+                            <input type="radio" name="contacto" value="telefono" required> Teléfono
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Áreas de interés (puede seleccionar más de una):</legend>
+                        <label>
+                            <input type="checkbox" name="intereses" value="administracion" required> Administración
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="cliente" required> Atención al cliente
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="tecnologia" required> Tecnología
+                        </label>
+                    </fieldset>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            <!-- Video de YouTube (puedes reemplazar la URL con la tuya propia) -->
+            
+            <section id="video">
+            <h2>Video de presentación</h2>
+            <p>A continuación, un breve video donde me presento profesionalmente:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W9iTARq2W8Q?si=zvDN2mF76phFX0Nx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+
+            <!-- Mapa de la ESPOL en Guayaquil -->
+            <h3>Ubicación: Escuela Superior Politécnica del Litoral (ESPOL)</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.7682932091284!2d-79.9680485731229!3d-2.147349999916888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d5f4de05d97%3A0x95fd88e0bdb41ecf!2sESPOL%20-%20Escuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1716138449001!5m2!1ses-419!2sec" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </section>
+        </section>
+    
+    <section id="informacion-extra">
+        <h2>Información adicional</h2>
+        <p>Visita mi perfil profesional en <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> para más detalles.</p>
+
+        <h3>Pasos para contactarme</h3>
+        <ol>
+            <li>Completar el formulario</li>
+            <li>Enviar el mensaje</li>
+            <li>Esperar respuesta por correo o teléfono</li>
+        </ol>
+
+        <h3>Herramientas que domino</h3>
+        <ul>
+            <li>Microsoft Excel</li>
+            <li>Google Drive</li>
+            <li>Slack</li>
+        </ul>
+    </section>
+
+
+    <section id="tabla-proyectos">
+        <h2>Resumen de Actividades</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Año 2023</th>
+                <th>Año 2024</th>
+            </tr>
+            <tr>
+                <th>Proyectos Completados</th>
+                <td>5</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <th>Capacitaciones</th>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <section id="referencias">
+        <h2>Referencias</h2>
+
+        <article>
+            <blockquote>"Marcia es una profesional excepcional, organizada y comprometida."</blockquote>
+            <p><strong>Laura Pérez</strong><br>Cargo: Jefa de Administración<br>Trabajó con Marcia durante dos años en Empresa XYZ, donde lideró exitosamente múltiples proyectos administrativos.</p>
+        </article>
+
+        <article>
+            <blockquote>"Su habilidad para resolver problemas y su empatía con los clientes marcaron la diferencia."</blockquote>
+            <p><strong>Carlos Gómez</strong><br>Cargo: Gerente de Operaciones<br>Colaboró con Marcia en atención al cliente, destacando su eficiencia y actitud positiva.</p>
+        </article>
+
+        <article>
+            <blockquote>"Siempre dispuesta a aprender y asumir nuevos retos con una actitud proactiva."</blockquote>
+            <p><strong>Sofía Morales</strong><br>Cargo: Supervisora de Recursos Humanos<br>Fue su supervisora directa en prácticas profesionales en el Instituto Profesional de Chile.</p>
+        </article>
+    </section>
+
+
     </main>
+
     <footer>
         &copy; 2025 Marcia Torres. Todos los derechos reservados.
     </footer>
 </body>
 </html>
+
