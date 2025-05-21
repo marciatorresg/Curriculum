@@ -1,0 +1,219 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+/* Estilo base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    color: #333;
+    padding: 30px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3949ab;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1a237e;
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #303f9f;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #c5cae9;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #5c6bc0;
+    margin-top: 20px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #e8eaf6;
+}
+
+/* Imagen de perfil */
+img.perfil, img[alt*="Foto"] {
+    display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+    width: 150px;
+}
+
+/* Formulario */
+form {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #3f51b5;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+/* Iframes responsivos */
+iframe {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#photo {
+    /* Ancho del elemento */
+    width: 15vw;
+
+    /* Alto del elemento */
+    height: auto;
+}
+
+.subtitle {
+    /* Color del texto en rgba */
+    color: rgb(151, 156, 165, 0.89);
+
+    /* Transformación del texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+footer p {
+  /* Alineación del texto a la derecha */
+  text-align: right;
+
+  /* Estilo de fuente itálica */
+  font-style: italic;
+}
+
+nav > ul {
+  /* Eliminar los estilos de lista predeterminados */
+  list-style: none;
+}
+
+section {
+  /* Borde de 0.2pt sólido con color gris azul claro */
+  border: 0.2pt solid #cddddd;
+
+  /* Márgenes: 4px arriba, 2px derecha/izquierda, 8px abajo */
+  margin: 4px 2px 8px 2px;
+
+  /* Relleno: 1.5% vertical, 0.8% horizontal */
+  padding: 1.5% 0.8%;
+
+  /* Margen inferior de 1.2 veces el tamaño del texto raíz */
+  margin-bottom: 1.2rem;
+
+  /* Bordes redondeados con 5px de radio */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* Sombra con desplazamiento de 3px, desenfoque 1px, sin expansión */
+  -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+  -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+  box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
