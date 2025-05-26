@@ -217,3 +217,64 @@ section {
   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
+
+nav > ul {
+    /* Activa el modelo de diseño Flexbox */
+    display: flex;
+
+    /* Distribuye los elementos con espacio igual entre ellos */
+    justify-content: space-evenly;
+
+    /* Organiza los elementos en una fila horizontal de izquierda a derecha */
+    flex-direction: row;
+
+    /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center;
+
+    /* Establece un espacio uniforme de 1rem entre cada elemento */
+    gap: 1rem;
+}
+
+section > form {
+
+    /* Activa el modelo de diseño basado en cuadrícula */
+    display: grid;
+
+    /* Define una sola columna que ocupa todo el ancho disponible del contenedor */
+    grid-template-columns: 1fr;
+
+    /* Establece un espacio vertical uniforme de 1rem entre filas */
+    row-gap: 1rem;
+
+    /* Establece un espacio horizontal uniforme de 1rem entre columnas */
+    column-gap: 1rem;
+
+}
+
+section#referencias {
+
+     /* Activa el modelo Flexbox */
+     display: flex;
+
+     /* Permite que los hijos pasen a la siguiente línea si no caben */
+     flex-wrap: wrap;
+
+     /* Espaciado uniforme entre filas y columnas */
+     gap: 1rem;
+
+}
+
+section#referencias > h2 {
+
+     /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
+     flex: 0 0 100%;
+
+}
+
+section#referencias > article {
+
+     /* Distribuye equitativamente los artículos en tres columnas */
+     flex: 1 0 calc(33.33% - 1rem);
+
+}
+
